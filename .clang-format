@@ -1,17 +1,17 @@
 ---
 Language: Cpp
-# BasedOnStyle:  LLVM
+BasedOnStyle: LLVM
 AccessModifierOffset: -2
-AlignAfterOpenBracket: Align
+AlignAfterOpenBracket: BlockIndent
 AlignArrayOfStructures: None
-AlignConsecutiveAssignments: Consecutive
-AlignConsecutiveBitFields: Consecutive
+AlignConsecutiveAssignments: false
+AlignConsecutiveBitFields: false
 AlignConsecutiveDeclarations: None
-AlignConsecutiveMacros: Consecutive
-AlignEscapedNewlines: Left
+AlignConsecutiveMacros: false
+AlignEscapedNewlines: DontAlign
 AlignOperands: DontAlign
-AlignTrailingComments: true
-AllowAllArgumentsOnNextLine: false
+AlignTrailingComments: false
+AllowAllArgumentsOnNextLine: true
 AllowAllParametersOfDeclarationOnNextLine: true
 AllowShortBlocksOnASingleLine: Empty
 AllowShortCaseLabelsOnASingleLine: false
@@ -28,19 +28,19 @@ BinPackArguments: false
 BinPackParameters: false
 BraceWrapping:
   AfterCaseLabel: false
-  AfterClass: true
+  AfterClass: false
   AfterControlStatement: Never
   AfterEnum: false
-  AfterFunction: true
+  AfterFunction: false
   AfterNamespace: false
   AfterObjCDeclaration: false
-  AfterStruct: true
-  AfterUnion: true
+  AfterStruct: false
+  AfterUnion: false
   AfterExternBlock: false
-  BeforeCatch: true
-  BeforeElse: true
+  BeforeCatch: false
+  BeforeElse: false
   IndentBraces: false
-  SplitEmptyFunction: true
+  SplitEmptyFunction: false
   SplitEmptyRecord: false
   SplitEmptyNamespace: false
   BeforeLambdaBody: false
@@ -53,12 +53,12 @@ BreakBeforeTernaryOperators: false
 BreakConstructorInitializersBeforeComma: false
 BreakConstructorInitializers: AfterColon
 BreakStringLiterals: false
-ColumnLimit: 120
+ColumnLimit: 80
 QualifierAlignment: Leave
 CompactNamespaces: false
 ConstructorInitializerAllOnOneLineOrOnePerLine: true
-ConstructorInitializerIndentWidth : 2
-ContinuationIndentWidth: 2
+ConstructorInitializerIndentWidth : 4
+ContinuationIndentWidth: 4
 Cpp11BracedListStyle: true
 DeriveLineEnding: false
 DerivePointerAlignment: false
@@ -71,17 +71,18 @@ FixNamespaceComments: true
 ForEachMacros:
   - Q_FOREACH
 IncludeBlocks: Regroup
-IndentCaseLabels: true
+IndentCaseLabels: false
 IndentAccessModifiers: false
 IndentCaseBlocks: false
 IndentGotoLabels: true
 IndentPPDirectives: BeforeHash
 IndentExternBlock: AfterExternBlock
 # IndentRequiresClause: true
-IndentWidth: 2
+IndentWidth: 4
+TabWidth: 4
 IndentWrappedFunctionNames: false
 # InsertBraces: false
-InsertTrailingCommas: None
+InsertTrailingCommas: Wrapped
 KeepEmptyLinesAtTheStartOfBlocks: true
 LambdaBodyIndentation: Signature
 MacroBlockBegin: ''
@@ -123,15 +124,15 @@ SpaceBeforeRangeBasedForLoopColon: true
 SpaceInEmptyBlock: false
 SpaceInEmptyParentheses: false
 SpacesBeforeTrailingComments: 1
-SpacesInAngles: true
-SpacesInConditionalStatement: true
-SpacesInContainerLiterals: true
+SpacesInAngles: false
+SpacesInConditionalStatement: false
+SpacesInContainerLiterals: false
 SpacesInCStyleCastParentheses: false
 SpacesInLineCommentPrefix:
   Minimum: 1
   Maximum: -1
-SpacesInParentheses: true
-SpacesInSquareBrackets: true
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
 SpaceBeforeSquareBrackets: false
 BitFieldColonSpacing: Both
 Standard: Latest
@@ -141,5 +142,5 @@ StatementMacros:
   - Q_UNUSED
   - QT_REQUIRE_VERSION
 UseCRLF: false
-UseTab: Never
+UseTab: Always
 ...
